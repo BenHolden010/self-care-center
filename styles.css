@@ -68,11 +68,12 @@ h2 {
     margin-top: 60px;
     height:100px;
     border-radius: 5px;
-    width: 558px
+    width: 558px;
+    color: #000000;
+    align-items: center;
 }
 
 #meditation-pic {
-    margin-top: 25px;
     width: 50px;
     height: 50px
 }
