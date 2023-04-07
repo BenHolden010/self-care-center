@@ -1,9 +1,8 @@
 
 // variables that target DOM elements
-var affirmationButton = document.querySelector('.affirmation-button')
-var mantraButton = document.querySelector('.mantra-button')
 var receiveMessageButton = document.querySelector('.receive-message-button')
-var userMessage =  document.querySelector('.user-message')
+var userMessage = document.querySelector('#display-message-box')
+var clearOraButton = document.querySelector('.clearOra')
 
 var affirmations= ['I forgive myself and set myself free.',
     'I believe I can be all that I want to be.',
@@ -37,18 +36,26 @@ var mantras = ['Breathing in, I send myself love. Breathing out, I send love to 
 // affirmationButton
 // mantraButton
 receiveMessageButton.addEventListener('click', receiveMessage)
-affirmationButton.addEventListener('click', receiveMessage)
-mantraButton.addEventListener('click', receiveMessage)
+// affirmationButton.addEventListener('click', receiveMessage)
+clearOraButton.addEventListener('click', clearOra)
 
 // functions
 function receiveMessage(){
-   if (true){
+    if (document.getElementById('affirmation').checked){
    userMessage.innerText = affirmations[getRandomIndex(affirmations)]
-   } else if (false) {
+   } else if (document.getElementById('mantra').checked) {
     userMessage.innerText = mantras[getRandomIndex(mantras)]
-   }
+   } else 
+   return
 }
 
 function getRandomIndex(array){
     return Math.floor(Math.random() * array.length);
+}
+
+function clearOra(){
+if (document.getElementById('affirmation').checked
+ || document.getElementById('mantra').checked){
+     location.reload()
+ }
 }
