@@ -6,3 +6,73 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
+html {
+    height: 100%;
+    background: linear-gradient(#134d71 15%, #78a7c6, #f7e4bf);
+}
+
+head{
+    background: #134d71;
+}
+
+* { 
+   text-align: center;
+   font-family: 'Quicksand', sans-serif;
+}
+h2 {
+    color: #ffffff;
+    margin-bottom: 60px;
+    margin-top: 38px
+}
+
+
+.body {
+    color: #ffffff;
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.message-box {
+    height: 72px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.radio {
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #000000;
+}
+
+.receive-message-button {
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: #134d71;
+    width: 150px
+}
+
+#display-message-box {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    margin-top: 60px;
+    height:100px;
+    border-radius: 5px;
+    width: 558px
+}
+
+#meditation-pic {
+    margin-top: 25px;
+    width: 50px;
+    height: 50px
+}
