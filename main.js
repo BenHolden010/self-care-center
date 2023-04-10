@@ -33,10 +33,7 @@ var mantras = ['Breathing in, I send myself love. Breathing out, I send love to 
     'I am the sky, the rest is weather.']
 
 // eventListeners
-// affirmationButton
-// mantraButton
 receiveMessageButton.addEventListener('click', receiveMessage)
-// affirmationButton.addEventListener('click', receiveMessage)
 clearOraButton.addEventListener('click', clearOra)
 
 // functions
